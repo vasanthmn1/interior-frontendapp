@@ -5,7 +5,11 @@ import { Button, Col, Row } from 'react-bootstrap'
 import { useFormik } from 'formik';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useSelector } from 'react-redux';
 const Contact = () => {
+
+    const { link } = useSelector(state => state.link)
+
     const handleClick = () => {
         toast.success('Thanks for fill I will Call 24Hovers ');
     };
@@ -41,7 +45,7 @@ const Contact = () => {
 
         onSubmit: async (value) => {
             // https://interior-phk8.onrender.com
-            const res = await axios.post('https://interior-phk8.onrender.com/data/adddata', value)
+            const res = await axios.post(`${link}/data/adddata`, value)
             console.log(res.data);
             value.name = ""
             value.city = ""
@@ -58,7 +62,6 @@ const Contact = () => {
 
             <ToastContainer />
             <div className={classes.info}>
-                <h1>{import.meta.env.ADDDATA}</h1>
                 <p>Any questions or suggestions?</p>
                 <p>Write us a message and we will contact you!</p>
             </div>
