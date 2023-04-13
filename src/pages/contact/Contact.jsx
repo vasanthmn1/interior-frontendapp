@@ -46,7 +46,6 @@ const Contact = () => {
         onSubmit: async (value) => {
             // https://interior-phk8.onrender.com
             const res = await axios.post(`${link}/data/adddata`, value)
-            console.log(res.data);
             value.name = ""
             value.city = ""
             value.email = ""
