@@ -1,0 +1,107 @@
+
+.container{
+    background-color: #e3e3e3;
+    padding: 50px 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+}
+.logodetils  {
+padding-left: 20px;
+}
+.instagram{
+    color: rgba(255, 0, 217, 0.338);
+    font-size: 2rem;
+}
+
+/*  */
+
+.box2 h4{
+    color: #D78616;
+    position: relative;
+    font-size: 2rem;
+    padding: 20px 0;
+    width: 280px;
+    padding: 0 40px;
+    
+}
+
+.box2 h4::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 50px;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #d78617;
+    padding: 2px;
+   
+}
+.contact li{
+    padding: 10px;
+    color: black;
+        font-size: 1.3rem;
+}
+
+/*  */
+.box3 h4{
+    color: #D78616;
+    position: relative;
+    font-size: 2rem;
+    
+width: 190px;
+    padding:  0px 40px;
+}
+.box3 h4::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 50px;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #d78617;
+    padding: 2px;
+   
+}
+
+
+.links li{
+    padding: 10px;
+    font-size: 1.3rem;
+    text-decoration: none ;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #D78616;
+}
+
+@media only screen and (max-width:1000px) {
+    .box3 h4 {
+      font-size: 30px !important;
+    }
+    .box2 h4 {
+        font-size: 30px !important;
+      }
+
+}
+@media only screen and (max-width:500px) {
+   
+   
+
+}

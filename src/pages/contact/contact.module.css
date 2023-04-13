@@ -1,0 +1,113 @@
+.container{
+    padding: 40px ;
+}
+.info{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.contactContainer{
+    
+}
+.detail{
+    background-color: #d78617;
+    color: #fff;
+}
+.detail h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 30px;
+}
+.form{
+    background-color: #F5F5F5;
+}
+.adderes{
+    font-weight: 500;
+  
+}
+.adderes p{
+  padding: 20px 20px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px !important;
+}
+
+.successInput{
+    outline: none;
+    border: none;
+    padding: 5px 0px;
+    border-bottom: 2px solid #e4e4e4;
+    background-color: inherit;
+    transition: border-color ease-in-out .30s;
+}
+.successInput:focus{
+    border-bottom: 2px solid #d78617;
+padding: 15px 0px;
+}
+.errorInput:focus{
+    border-bottom: 2px solid #ff0400;
+padding: 15px 0px;
+}
+.errorInput{
+    outline: none;
+    border: none;
+    padding: 5px 0px;
+    border-bottom: 2px solid #ff0400;
+    background-color: inherit;
+    transition: border-color ease-in-out .30s;
+}
+
+
+/* .box1 textarea{
+    outline: none;
+    border: none;
+    padding: 15px 0px;
+    border-bottom: 2px solid #e4e4e4;
+    background-color: inherit;
+    transition: border-color ease-in-out .30s;
+}
+
+.box1 textarea:focus{
+    border-bottom: 2px solid #d78617;
+
+} */
+.btnbox{
+    display: flex;
+    align-items: center;
+}
+.btn {
+    position: relative;
+    background-color: #d78617;
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 154px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  
+  }
+  
+  .btn::before {
+    content: "";
+    background-color: rgb(160, 155, 155);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }

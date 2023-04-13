@@ -1,0 +1,54 @@
+.container{
+    padding: 50px 30px;
+}
+
+.box2 span{
+    color: #d78617;
+}
+.box2 h1{
+    padding: 10px 0px 20px 86px;
+    position: relative;
+    font-weight: 600;
+    
+}
+
+.box2 h1:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 56px;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #d78617;
+    padding: 1px;
+   
+}
+.box2 p{
+    opacity: 0.9;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .box2 h1{
+        padding: 50px 0px 20px 86px;
+        position: relative;
+        font-weight: 600;
+        
+    }
+
+    .box2 h1:before{
+        content: "";
+        position: absolute;
+        top: 65%;
+        left: 0;
+        width: 56px;
+        height: 2px;
+        transform: translateY(-50%);
+        background-color: #d78617;
+        padding: 1px;
+       
+    }
+    
+
+   }
