@@ -78,7 +78,7 @@ const Header = () => {
                                     {
                                         nav_link.map((val, idx) => {
                                             return (
-                                                <li className='nav__items' key={idx}>
+                                                <li key={idx}>
                                                     <NavLink className={navClass => navClass.isActive ? classes.active : classes.nav__item} to={val.path} >{val.dispaly}</NavLink>
                                                 </li>
                                             )

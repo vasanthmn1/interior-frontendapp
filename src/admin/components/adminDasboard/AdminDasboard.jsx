@@ -31,7 +31,7 @@ export const AdminDasboard = () => {
         try {
             let conform = window.confirm("are you sure you want to delete ")
             if (conform) {
-                await axios.delete(`/data/${id}`)
+                await axios.delete(`${link}/data/${id}`)
                 getUsers();
                 toast.success('Data deleted successfully!')
 
