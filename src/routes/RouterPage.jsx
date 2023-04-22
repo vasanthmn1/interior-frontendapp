@@ -5,8 +5,9 @@ import Contact from '../pages/contact/Contact'
 import { About } from '../pages/aboutus/About'
 import Services from '../pages/services/Services'
 import Gallery from '../pages/gallery/Gallery'
-import { PageEr } from '../components/PageEr'
+
 import Aos from 'aos'
+import NotFound from '../components/notfound/NotFound'
 
 
 
@@ -24,7 +25,7 @@ const RouterPage = () => {
                 <Route path='/services' element={<Services />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/gallery' element={<Gallery />} />
-
+                <Route path='*' element={<NotFound />} />
             </Routes>
 
         </div>

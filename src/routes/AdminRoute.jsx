@@ -4,8 +4,9 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 // import { Dashboard } from '../admin/page/dashboard/Dashboard'
 import Login from '../admin/page/login/Login'
 import Dashboard from '../admin/page/dashboard/Dashboard'
-import { PageEr } from '../components/PageEr'
+
 import { useSelector } from 'react-redux'
+import NotFound from '../components/notfound/NotFound'
 
 export const RouterAdmin = () => {
 
@@ -13,7 +14,7 @@ export const RouterAdmin = () => {
     return (
         <div>
             <Routes>
-                {/* <Route path='/login' element={<Login />} /> */}
+
                 <Route path='/admin' element={<Navigate to={'/admin/login'} />} />
                 <Route path='/admin/login' element={<Login />} />
                 {
@@ -21,11 +22,11 @@ export const RouterAdmin = () => {
                         <Route path='/admin/dashboard' element={<Dashboard />} />
                         :
 
-                        <Route path='*' element={<PageEr />} />
+                        <Route path='*' element={<NotFound />} />
                 }
 
 
-                <Route path='*' element={<PageEr />} />
+                <Route path='*' element={<NotFound />} />
 
             </Routes>
         </div>
