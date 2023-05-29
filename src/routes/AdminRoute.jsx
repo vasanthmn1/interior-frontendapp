@@ -22,7 +22,7 @@ export const RouterAdmin = () => {
                         <Route path='/admin/dashboard' element={<Dashboard />} />
                         :
 
-                        <Route path='*' element={<NotFound />} />
+                        null
                 }
 
 

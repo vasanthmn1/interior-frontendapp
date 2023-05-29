@@ -25,9 +25,8 @@ const RouterPage = () => {
                 <Route path='/services' element={<Services />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/gallery' element={<Gallery />} />
-                <Route path='*' element={<NotFound />} />
+                {/* <Route path='*' element={<NotFound />} /> */}
             </Routes>
-
         </div>
     )
 }

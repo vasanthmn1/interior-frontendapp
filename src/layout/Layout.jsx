@@ -5,6 +5,7 @@ import { Footer } from '../components/footser/Footer'
 
 import AdminRoute from '../routes/AdminRoute'
 import { Routes, useLocation } from 'react-router-dom'
+import NotFound from '../components/notfound/NotFound'
 
 
 
@@ -14,6 +15,7 @@ const Layout = () => {
     return (
         <div>
             <div>
+
                 {location.pathname.startsWith('/admin') ? <AdminRoute /> : <Header />}
                 <RouterPage />
                 {location.pathname.startsWith('/admin') ? null : <Footer />}
