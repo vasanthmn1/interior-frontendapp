@@ -72,14 +72,14 @@ const Contact = () => {
 
                     <div className={classes.adderes}>
                         <p>
-                            Vanniyan villai, Vellicode , Mulagumoodu (P.O) K.K Dist
+                            Hidden  Leaves Village,  Konohagakure , naruto
                         </p>
                         <p>
-                            tlineinteriors@gmail.com, info@t-lineinteriors.com
+                            interiors@gmail.com, interiors.com
                         </p>
                         <p>
-                            +91 9488123455
                             +91 9876543211
+                            +91 9876987698
                         </p>
                     </div>
                 </Col>
@@ -87,7 +87,7 @@ const Contact = () => {
                     <form onSubmit={myFormik.handleSubmit}>
                         <Row>
                             <Col md="6" className={classes.box1}>
-                                <label>Name:</label>
+                                <label className='mb-2'>Name:</label>
                                 <input type='text'
                                     className={myFormik.errors.name && myFormik.touched.name ? classes.errorInput : classes.successInput}
                                     name='name'
@@ -103,7 +103,7 @@ const Contact = () => {
                                 }
                             </Col>
                             <Col md="6" className={classes.box1}>
-                                <label>What city are you from?</label>
+                                <label className='mb-2'>What city are you from?</label>
                                 <input type='text'
                                     className={myFormik.errors.city && myFormik.touched.city ? classes.errorInput : classes.successInput}
                                     value={myFormik.values.city}
@@ -118,8 +118,8 @@ const Contact = () => {
                                         : null
                                 }
                             </Col>
-                            <Col md="6" className={classes.box1}>
-                                <label>E-mail:</label>
+                            <Col md="6" className={classes.box1} >
+                                <label className='mb-2'>E-mail:</label>
                                 <input type='text'
                                     name='email'
                                     className={myFormik.errors.email && myFormik.touched.email ? classes.errorInput : classes.successInput}
@@ -136,7 +136,7 @@ const Contact = () => {
                                 }
                             </Col>
                             <Col md="6" className={classes.box1}>
-                                <label>Phone Number:</label>
+                                <label className='mb-2'>Phone Number:</label>
                                 <input type='number'
                                     name='number'
                                     className={myFormik.errors.number && myFormik.touched.number ? classes.errorInput : classes.successInput}
@@ -152,7 +152,7 @@ const Contact = () => {
                                 }
                             </Col>
                             <Col md="8" className={classes.box1}>
-                                <label>Message</label>
+                                <label className='mb-2'>Message</label>
                                 <textarea rows="5" cols='7'
                                     name='message'
                                     className={myFormik.errors.message && myFormik.touched.message ? classes.errorInput : classes.successInput}
