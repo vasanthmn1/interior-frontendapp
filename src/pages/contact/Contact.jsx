@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios';
 import classes from './contact.module.css'
 import { Button, Col, Row } from 'react-bootstrap'
@@ -6,10 +6,11 @@ import { useFormik } from 'formik';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useSelector } from 'react-redux';
+import { RiLoader4Line } from 'react-icons/ri'
 const Contact = () => {
 
     const { link } = useSelector(state => state.link)
-
+    const [isloading, setIsLoading] = useState(false)
     const handleClick = () => {
         toast.success('Thanks for fill I will Call 24Hovers ');
     };
@@ -44,6 +45,7 @@ const Contact = () => {
         },
 
         onSubmit: async (value) => {
+            setIsLoading(true)
             const res = await axios.post(`${link}/data/adddata`, value)
             value.name = ""
             value.city = ""
@@ -51,6 +53,7 @@ const Contact = () => {
             value.number = ""
             value.message = ""
             handleClick()
+            setIsLoading(false)
 
         }
     })
@@ -168,9 +171,18 @@ const Contact = () => {
                                 }
                             </Col>
                             <Col md="3" className={classes.btnbox}>
-                                <button className={classes.btn} type='submit'>
-                                    Send
-                                </button>
+                                {/* <button disabled={true} className={classes.btn} type='submit'>
+                                    Send  <RiLoader4Line />
+                                </button> */}
+                                {
+                                    isloading ?
+                                        <button disabled={true} className={classes.loadbtn} type='submit'>
+                                            Loading...<RiLoader4Line className={classes.loader} />
+                                        </button> :
+                                        <button className={classes.btn} type='submit'>
+                                            Send
+                                        </button>
+                                }
                             </Col>
                         </Row>
                     </form>
