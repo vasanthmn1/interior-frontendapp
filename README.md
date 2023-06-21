@@ -11,5 +11,5 @@ Technologies Used:
 - Ant Design: UI library with pre-built components for a polished user interface.
 - React ChartJS 2: React wrapper for Chart.js library to create dynamic charts.
 
- Open the application in your browser at `https://admirable-pudding-b31006.netlify.app/`.  [Click](https://chic-pithivier-376c30.netlify.app/)
+ Open the application in your browser at `https://chic-pithivier-376c30.netlify.app/`.  [Click](https://chic-pithivier-376c30.netlify.app/)
 
